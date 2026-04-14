@@ -1,5 +1,6 @@
 const mongoose = require("mongoose")
 
+
 const musicSchema = new mongoose.Schema({
     url: {
         type: String,
@@ -11,7 +12,7 @@ const musicSchema = new mongoose.Schema({
     },
     artist: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "user",
+        ref: "User",
         required: true
     }
 
